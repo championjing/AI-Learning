@@ -1,2 +1,2 @@
-1;D:\Code\space-my\AI-Learning\datasets\guanjun\01.JPG
-2;D:\Code\space-my\AI-Learning\datasets\youshan\1.png
+1;/Users/champ/Documents/Code/AI-Learning/datasets/guanjun/1.jpg
+2;/Users/champ/Documents/Code/AI-Learning/datasets/youshan/1.png
