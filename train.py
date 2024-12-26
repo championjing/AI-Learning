@@ -155,7 +155,7 @@ if __name__ == "__main__":
     #------------------------------------------------------------------#
     #   是否开启LFW评估
     #------------------------------------------------------------------#
-    lfw_eval_flag   = True
+    lfw_eval_flag   = False
     #------------------------------------------------------------------#
     #   LFW评估数据集的文件路径和对应的txt文件
     #------------------------------------------------------------------#
@@ -256,8 +256,9 @@ if __name__ == "__main__":
             model_train = model_train.cuda()
 
     #---------------------------------#
-    #   LFW估计
+    #   LFW 估计
     #---------------------------------#
+    print(f"-------------{lfw_dir_path},{lfw_pairs_path},{input_shape}")
     LFW_loader = torch.utils.data.DataLoader(
         LFWDataset(dir=lfw_dir_path, pairs_path=lfw_pairs_path, image_size=input_shape), batch_size=32, shuffle=False) if lfw_eval_flag else None
 
